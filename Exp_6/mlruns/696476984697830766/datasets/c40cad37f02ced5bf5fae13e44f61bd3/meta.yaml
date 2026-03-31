@@ -1,0 +1,9 @@
+digest: 5a626ad2
+name: dataset
+profile: '{"features_shape": [30, 4], "features_size": 120, "features_nbytes": 960}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float64\", \"shape\": [-1, 4]}}]", "targets": null}}'
+source: '{"tags": {"mlflow.user": "HP", "mlflow.source.name": "d:/WORK FROM HOME/Github
+  2/Shrikant_mlops/Exp_6/main_6.py", "mlflow.source.type": "LOCAL", "mlflow.source.git.commit":
+  "5af1797e011ac4d0d634f5c1f0d83e3d61b159fd"}}'
+source_type: code
