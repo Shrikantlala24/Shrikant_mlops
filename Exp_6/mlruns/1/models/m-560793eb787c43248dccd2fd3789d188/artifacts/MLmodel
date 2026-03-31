@@ -1,0 +1,29 @@
+artifact_path: file:///D:/WORK FROM HOME/Github 2/Shrikant_mlops/Exp_6/mlruns/1/models/m-560793eb787c43248dccd2fd3789d188/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.4
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.1
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.10.1
+model_id: m-560793eb787c43248dccd2fd3789d188
+model_size_bytes: 848
+model_uuid: m-560793eb787c43248dccd2fd3789d188
+prompts: null
+run_id: fd093a9555494e9889eb21d81b030d9c
+signature:
+  inputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1, 4]}}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "object", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-03-31 05:34:18.067794'

@@ -17,8 +17,9 @@ from sklearn.metrics import accuracy_score, confusion_matrix, classification_rep
 
 # Ensure MLflow UI reads the same local store for runs
 tracking_dir = Path(__file__).resolve().parent / "mlruns"
-mlflow.set_tracking_uri(tracking_dir.as_uri())
-mlflow.set_experiment("exp_6_logreg")
+# mlflow.set_tracking_uri(tracking_dir.as_uri())
+mlflow.set_tracking_uri("sqlite:///D:/WORK FROM HOME/Github 2/Shrikant_mlops/Exp_6/mlflow.db")
+mlflow.set_experiment("exp_6_Trial_2")
 
 # logging start kar
 mlflow.sklearn.autolog()
