@@ -8,11 +8,17 @@ iris.drop_duplicates(inplace = True)
 
 import mlflow
 import mlflow.sklearn
+from pathlib import Path
 
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+
+# Ensure MLflow UI reads the same local store for runs
+tracking_dir = Path(__file__).resolve().parent / "mlruns"
+mlflow.set_tracking_uri(tracking_dir.as_uri())
+mlflow.set_experiment("exp_6_logreg")
 
 # logging start kar
 mlflow.sklearn.autolog()
